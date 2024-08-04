@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Landing Page Template</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+}
+a {
+            cursor: pointer;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+ 
+        h1 {
+            text-align: center;
+            color: #343a40;
+        }
+ 
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            border: 2px solid #dee2e6;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+ 
+        th,
+        td {
+            border: 1px solid #dee2e6;
+            padding: 10px;
+            text-align: center;
+        }
+ 
+        th {
+            background-color: #f2f2f2;
+            color: #343a40;
+        }
+ 
+        .highlight {
+            background-color: black;
+        }
+ 
+        .special {
+            background-color: black;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Fitty Fittness</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 450px;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" onclick="scrollToSection('title')">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" onclick="scrollToSection('features')">Benefits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" onclick="scrollToSection('pricing')">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" onclick="scrollToSection('schedule')">Schedule</a>
+              </li>
+              <li class="nav-item">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--Title-->
+      <section id="title">
+        <div class="px-4 pt-5 my-5 text-center border-bottom">
+            <h1 class="display-4 fw-bold text-body-emphasis">Start your journey</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">Elevate your workout experience with Fitty Fittness, from wheight lifting classes to swimminng, Fitty Fittness has it all.</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Sign Up</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact Us</button>
+              </div>
+            </div>
+            <div class="overflow-hidden" style="max-height: 45vh;">
+              <div class="container px-5">
+                <img src="static/imgs/Dumbbell-training-in-gym-750x541.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="A person holding a dumbbell" width="700" height="500" loading="lazy">
+              </div>
+              <p style="margin-right: 400px; font-size: 10px;">This photo is just an example, rights reserved to</p>
+              <p style="margin-right: 499px; font-size: 10px;">https://fitnessvolt.com/</p>
+            </div>
+          </div>
+      </section>
+
+      <!-- Features -->
+      <section id="features">
+        <div class="container px-4 py-5" id="featured-3">
+            <h2 class="pb-2 border-bottom">Why with us?</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                  <img src="static/imgs/weight.svg" alt="weight" height="60">
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Quality and Variety of Equipment</h3>
+                <p>The gym should offer a wide range of high-quality equipment to cater to different types of workouts, including cardio machines, free weights, resistance machines, and functional training equipment. A well-equipped gym ensures that you can perform a diverse range of exercises to meet your fitness goals.</p>
+              </div>
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                  <img src="static/imgs/images.png" alt="certified" height="60">
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Trained and Supportive Staff</h3>
+                <p>Knowledgeable and friendly staff, including certified personal trainers and fitness instructors, can provide valuable guidance, create personalized workout plans, and offer support. Having access to expert advice can significantly enhance your fitness journey and help you achieve better results.</p>
+              </div>
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                  <img src="static/imgs/sweep.png" alt="sweep" height="60">
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Cleanliness and Atmosphere</h3>
+                <p>A clean, well-maintained gym with a positive and motivating atmosphere is crucial. Cleanliness is essential for hygiene and comfort, while a welcoming environment can make your workouts more enjoyable and encourage consistency. Look for gyms that maintain high standards of cleanliness and foster a community vibe.</p>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- Testimonial -->
+       <section id="testimonial" class="container px-4 py-5">
+        <h2>"Since I joined Fitty Fittness I'm confident in my body and I feel more alive then ever."</h2>
+        <p style="text-align: center;">Anonymous Member</p>
+       </section>
+
+       <!-- Pricing -->
+        <section id="pricing">
+            <div class="container py-3">
+            <header>
+                <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 fw-normal text-body-emphasis">A Plan for Every Dog's Needs</h1>
+                <p class="fs-5 text-body-secondary">Simple and affordable price plans for you and your dog.</p>
+                </div>
+            </header>
+
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-normal">Basic</h4>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>Pool access</li>
+                        <li>Weight room access</li>
+                        <li>Basketball cort access</li>
+                      </ul>
+                      <button type="button" class="w-100 btn btn-lg btn-outline-light">Get started</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-normal">Standard</h4>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title pricing-card-title">$30<small class="text-body-secondary fw-light">/mo</small></h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>Pool access</li>
+                        <li>Weight room access</li>
+                        <li>Basketball cort access</li>
+                        <li>Boxing room</li>
+                        <li>Guest privlage</li>
+                      </ul>
+                      <button type="button" class="w-100 btn btn-lg btn-light">Get started</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm border-light">
+                    <div class="card-header py-3 text-bg-light border-light">
+                      <h4 class="my-0 fw-normal">Premium</h4>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title pricing-card-title">$50<small class="text-body-secondary fw-light">/mo</small></h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>Pool access</li>
+                        <li>Weight room access</li>
+                        <li>Basketball cort access</li>
+                        <li>Boxing room</li>
+                        <li>Guest privlage</li>
+                        <li>Personal coach</li>
+                        <li>Unlimited access to massage room</li>
+                      </ul>
+                      <button type="button" class="w-100 btn btn-lg btn-light">Get started</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Schedule-->
+              <section id="schedule">
+                <h2>Coaching Schedule</h2>
+                <table>
+                  <tr>
+                      <th>Day/Period</th>
+                      <th>Sunday</th>
+                      <th>Monday</th>
+                      <th>Tuesday</th>
+                      <th>Wednesday</th>
+                      <th>Thursday</th>
+                      <th>Friday</th>
+                      <th>Saturday</th>
+                  </tr>
+                  <tr>
+                      <td class="highlight"><b>9:00AM</b></td>
+                      <td>Pickleballl</td>
+                      <td>Weight Lifting</td>
+                      <td>Biking Studio</td>
+                      <td>Basketball</td>
+                      <td>Soccer</td>
+                      <td>Calisthenics</td>
+                      <td>Yoga</td>
+                  </tr>
+                  <tr>
+                      <td class="highlight"><b>10:00AM</b></td>
+                      <td>Yoga</td>
+                      <td>Basketball</td>
+                      <td>Biking Studio</td>
+                      <td>Pickleballl</td>
+                      <td>Calisthenics</td>
+                      <td>Soccer</td>
+                      <td>Weight Lifting</td>
+                  </tr>
+                  <tr>
+                      <td class="highlight"><b>11:00AM</b></td>
+                      <td>Weight Lifting</td>
+                      <td>Yoga</td>
+                      <td>Soccer</td>
+                      <td>Basketball</td>
+                      <td>Pickleballl</td>
+                      <td>Biking Studio</td>
+                      <td>Calisthenics</td>
+                  </tr>
+                  <tr>
+                      <td class="highlight"><b>12:00AM</b></td>
+                      <td>Basketball</td>
+                      <td>Calisthenics</td>
+                      <td>Weight Lifting</td>
+                      <td>Biking Studio</td>
+                      <td>Yoga</td>
+                      <td>Pickleballl</td>
+                      <td>Soccer</td>
+                  </tr>
+                  <tr>
+                      <td class="highlight"><b>1:00PM</b></td>
+                      <td>Soccer</td>
+                      <td>Weight Lifting</td>
+                      <td>Yoga</td>
+                      <td>Basketball</td>
+                      <td>Pickleballl</td>
+                      <td>Calisthenics</td>
+                      <td>Biking Studio</td>
+                  </tr>
+                  <tr>
+                      <td class="highlight"><b>2:00PM</b></td>
+                      <td>Basketball</td>
+                      <td>Weight Lifting</td>
+                      <td>Pickleballl</td>
+                      <td>Calisthenics</td>
+                      <td>Biking Studio</td>
+                      <td>Soccer</td>
+                      <td>Yoga</td>
+
+                  </tr>
+                  <tr>
+                    <td class="highlight"><b>3:00PM</b></td>
+                    <td>Weight Lifting</td>
+                    <td>Calisthenics</td>
+                    <td>Soccer</td>
+                    <td>Yoga</td>
+                    <td>Basketball</td>
+                    <td>Pickleballl</td>
+                    <td>Biking Studio</td>
+
+                </tr>
+                <tr>
+                  <td class="highlight"><b>4:00PM</b></td>
+                  <td>Calisthenics</td>
+                  <td>Biking Studio</td>
+                  <td>Soccer</td>
+                  <td>Basketball</td>
+                  <td>Yoga</td>
+                  <td>Weight Lifting</td>
+                  <td>Pickleballl</td>
+
+              </tr>
+              <tr>
+                <td class="highlight"><b>5:00PM</b></td>
+                <td>Biking Studio</td>
+                <td>Soccer</td>
+                <td>Yoga</td>
+                <td>Pickleballl</td>
+                <td>Calisthenics</td>
+                <td>Basketball</td>
+                <td>Weight Lifting</td>
+
+            </tr>
+            <tr>
+              <td class="highlight"><b>6:00PM</b></td>
+              <td>Yoga</td>
+              <td>Soccer</td>
+              <td>Biking Studio</td>
+              <td>Weight Lifting</td>
+              <td>Basketball</td>
+              <td>Calisthenics</td>
+              <td>Pickleballl</td>
+
+          </tr>
+          <tr>
+            <td class="highlight"><b>7:00PM</b></td>
+            <td>Weight Lifting</td>
+            <td>Yoga</td>
+            <td>Soccer</td>
+            <td>Basketball</td>
+            <td>Calisthenics</td>
+            <td>Biking Studio</td>
+            <td>Pickleballl</td>
+
+        </tr>
+        <tr>
+          <td class="highlight"><b>8:00PM</b></td>
+          <td colspan="7" class="special">Weight Lifting</td>
+
+      </tr>
+      <tr>
+        <td class="highlight"><b>9:00PM</b></td>
+        <td colspan="7" class="special">Boxing</td>
+
+    </tr>
+    <tr>
+      <td class="highlight"><b>10:00PM</b></td>
+      <td colspan="7" class="special">Brazillian Jiu Jitsu</td>
+
+  </tr>
+              </table>
+                
+              </section>
+
+              <!--Footer-->
+              <section id="footer">
+                <div class="container">
+                    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                        </a>
+                        <p>&copy; <span id="currentYear"></span> Ido Hoffman. All rights reserved.</p>
+                      </div>
+                  
+                      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+                      </ul>
+                    </footer>
+                  </div>
+              </section>
+              <script>function scrollToSection(sectionId) {document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });}</script>
+              <script>document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
